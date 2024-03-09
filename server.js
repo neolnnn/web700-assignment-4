@@ -27,11 +27,11 @@ collegedata.initialize().then(() => { // initializes collegedata before starting
     })
 
     app.get('/htmldemo', (req, res) => {
-        res.sendFile(`${__dirname}/views/htmldemo.html`);
+        res.sendFile(`${__dirname}/views/htmlDemo.html`);
     })
 
     app.get('/students/add', (req, res) => {
-        res.sendFile(`${__dirname}/views/addstudent.html`)
+        res.sendFile(`${__dirname}/views/addStudent.html`)
     })
 
     app.post('/students/add', (req, res) => {
