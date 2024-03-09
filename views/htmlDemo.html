@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/theme.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">njoshua2</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+					<li class="nav-item"><a class="nav-link" href="/students/add">Add Student</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+					<!--My code starts here-->
+					<article>
+						<header>
+							<h1>
+								HTML Playground
+							</h1>
+						</header>
+					</article>
+					<!--Tables start here-->
+					<section>
+						<header>
+							<h2>Tables</h2>
+						</header>
+						<table border="0">
+							<h3>Fruits</h3>
+							<thead>
+								<tr>
+									<th>Fruit</th>
+									<th>Crushability</th>
+									<th>Time it would take</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Orange</td>
+									<td rowspan="2">Yes</td>
+									<td>Seconds</td>
+								</tr>
+								<tr>
+									<td>Apple</td>
+									<td>Probably a while</td>
+								</tr>
+								<tr>
+									<td>Pineapple</td>
+									<td>No</td>
+									<td>Would take some time</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="3">More fruits later</td>
+								</tr>
+							</tfoot>
+						</table>
+						<table border="0">
+							<h3>Stray Cats</h3>
+							<thead>
+								<tr>
+									<th>Cat Color</th>
+									<th>Name</th>
+									<th>Why</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Orange</td>
+									<td>Garfunkel</td>
+									<td rowspan="2">Sounds dumb</td>
+								</tr>
+								<tr>
+									<td>Black</td>
+									<td>Milo</td>
+								</tr>
+								<tr>
+									<td>Calico</td>
+									<td>Pudding</td>
+									<td>Calico cats are gelatinous</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="3">They're all good cats</td>
+								</tr>
+							</tfoot>
+						</table>
+					</section>
+					<!--Lists start here-->
+					<section>
+						<header>
+							<h2>Lists</h2>
+							<h3>Objects in my room</h3>
+						</header>
+						<ol type="1">
+							<li>Desk</li>
+							<li>Water Bottle</li>
+							<li>Laptop</li>
+							<ul type="square">
+								<li>Keys</li>
+								<li>Screen</li>
+								<li>This Picture</li>
+								<img src="./media/mor_cat.png" alt="A stray cat on a chair" style="height: 200px;">
+							</ul>
+							<li>Knife</li>
+							<li>Meat</li>
+						</ol>
+					</section>
+					<!--Images start here-->
+					<section>
+						<header>
+							<h2>Images</h2>
+						</header>
+						<div class="row">
+							<div class="column">
+								<img src="./media/furball_1.png" alt="Furball, the dog" style="height: 500px;">
+							</div>
+							<div class="column">
+								<img src="./media/furball_2.png" alt="Another photo of furball, the dog" style="height: 500px;">
+							</div>
+							<div class="column">
+								<img src="./media/furball_3.png" alt="A stray cat on a chair" style="height: 500px;">
+							</div>
+						</div>
+						<footer>
+							<p>
+								This is my dog Furball.
+							</p>
+						</footer>
+					</section>
+					<!--Audio starts here-->
+					<section>						<header>
+							<h2>Audio</h2>
+						</header>
+						<audio controls>
+							<source src="./media/audiosample.ogg" type="audio/ogg">
+						</audio>
+						<footer>
+							<p>This is a MIDI rendition of Dear Prudence by the Beatles on the Yamaha MU2000.</p>
+						</footer>
+					</section>
+					<!--Video starts here-->
+					<section>
+						<header>
+							<h2>Video</h2>
+						</header>
+						<video controls>
+							<source src="./media/videosample.mp4" type="video/mp4">
+						</video>
+						<footer>
+							<p>This is a short recreation of a Garfield comic strip by Lasagna Cat. Don't mind the other 60 seconds of it.</p>
+						</footer>
+					</section>
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
